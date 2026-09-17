@@ -9,7 +9,7 @@ FOR EACH ROW
 UPDATE items
 
 -- set its quantity to the original quantity - the number of the quanitity placed on the order that triggered this
-SET quanitity = quanitity - NEW.number
+SET quantity = quantity - NEW.number
 
 -- which row in items to update
 WHERE name = NEW.item_name;
